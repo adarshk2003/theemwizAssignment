@@ -1,3 +1,8 @@
+# Navigate to the client directory
 cd client
+
+# Install the required dependencies
 npm install 
-npm run dev 
+
+# Start the development server
+npm run dev
