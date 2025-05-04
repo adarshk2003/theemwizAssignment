@@ -20,7 +20,9 @@ const SectionWrapper = styled.section`
   background-color: #2d2141;
   text-align: center;
   animation: ${fadeIn} 1s ease forwards;
+  overflow-x: hidden;
 `;
+
 
 const Heading = styled.h5`
   font-size: 1rem;
@@ -68,23 +70,24 @@ const ImageGrid = styled.div`
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
+  width: 100%;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 `;
+
 
 const GridItem = styled.div`
   grid-column: span ${({ span }) => span};
   position: relative;
-
-  @media (max-width: 768px) {
-    grid-column: span 12;
-  }
+  width: 100%; /* Ensure full width */
+  overflow: hidden;
 
   img {
     width: 100%;
     height: auto;
+    display: block;
     border-radius: 5px;
     transition: transform 0.3s ease;
 
@@ -92,7 +95,12 @@ const GridItem = styled.div`
       transform: scale(1.02);
     }
   }
+
+  @media (max-width: 768px) {
+    grid-column: span 12 !important;
+  }
 `;
+
 
 const Overlay = styled.div`
   position: absolute;
@@ -103,6 +111,13 @@ const Overlay = styled.div`
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    bottom:18%
+  }
+    @media (max-width: 480px) {
+    bottom: 30%;  
+  }
 `;
 
 const Caption = styled.div`

@@ -83,6 +83,7 @@ const StatsNumber = styled.h3`
 const StatsText = styled.p`
   font-size: 0.9rem;
    font-weight: 700;
+   font-family: "Lato", sans-serif;
   color: #444;
 `;
 
@@ -102,16 +103,19 @@ const ProcessStepNumber = styled.h3`
 const ProcessStepText = styled.p`
   font-size: 1rem;
    font-weight: 900;
+   font-family: "Lato", sans-serif;
   color: #444;
 `;
 
 const VideoHeading = styled.h1`
   font-size: 2.5rem;
   font-weight: 900;
+  font-family: "Lato", sans-serif;
 `;
 
 const VideoParagraph = styled.p`
   font-size: 1rem;
+  font-family: "Lato", sans-serif;
   color: #444;
   margin-top: 1rem;
 `;

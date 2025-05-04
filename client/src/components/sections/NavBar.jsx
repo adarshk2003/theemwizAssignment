@@ -20,6 +20,7 @@ const StyledNavLink = styled(Nav.Link)`
   font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
+   font-family: "Lato", sans-serif;
 
   &:hover {
     color: #007bff !important;
@@ -47,6 +48,7 @@ const StyledButton = styled(Button)`
   font-weight: 500;
   background-color: transparent;
   border: 1px solid white;
+   font-family: "Lato", sans-serif;
 
   &:hover {
     background-color: #0056b3;

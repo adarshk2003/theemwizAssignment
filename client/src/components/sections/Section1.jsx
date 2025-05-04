@@ -98,6 +98,7 @@ const HeadingText = styled.h1`
   font-size: 3rem;
   font-weight: 900;
   color: #fff;
+   font-family: "Lato", sans-serif;
   line-height: 1.2;
   margin: 0;
 
@@ -115,6 +116,7 @@ const Paragraph = styled.p`
   font-size: 0.9rem;
   color: #ccc;
   margin-bottom: 2rem;
+   font-family: "Lato", sans-serif;
   max-width: 480px;
 
   @media (max-width: 768px) {
@@ -176,8 +178,10 @@ const ProfileText = styled.div`
   color: #eee;
   line-height: 1.3;
 
+
   p {
     margin: 0;
+     font-family: "Lato", sans-serif;
   }
 
   span {
@@ -185,6 +189,7 @@ const ProfileText = styled.div`
     font-weight: bold;
     color: #fff;
     margin-top: 0.25rem;
+     font-family: "Lato", sans-serif;
   }
 `;
 
